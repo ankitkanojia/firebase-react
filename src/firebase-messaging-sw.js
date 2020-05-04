@@ -1,5 +1,5 @@
-importScripts("https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js");
-//importScripts("https://www.gstatic.com/firebasejs/5.9.4/firebase-messaging.js");
+//importScripts("https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/5.9.4/firebase-messaging.js");
 // importScripts("https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js");
 // importScripts("https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js");
 
