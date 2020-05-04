@@ -2,7 +2,7 @@ import * as firebase from "firebase/app";
 import "firebase/messaging";
 
 firebase.initializeApp({
-  messagingSenderId: "893833013962"
+  //messagingSenderId: "893833013962"
   // apiKey: "AIzaSyDayZmQIhMynkemx_-Lxb2--icCpPWHIqM",
   // authDomain: "papresupplymobileapp.firebaseapp.com",
   // databaseURL: "https://papresupplymobileapp.firebaseio.com",
