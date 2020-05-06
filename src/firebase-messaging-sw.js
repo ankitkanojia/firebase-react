@@ -2,21 +2,20 @@
 importScripts("https://www.gstatic.com/firebasejs/5.9.4/firebase-messaging.js");
 // importScripts("https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js");
 // importScripts("https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js");
-
 firebase.initializeApp({
-  messagingSenderId: "893833013962"
-  // apiKey: "AIzaSyDayZmQIhMynkemx_-Lxb2--icCpPWHIqM",
-  // authDomain: "papresupplymobileapp.firebaseapp.com",
-  // databaseURL: "https://papresupplymobileapp.firebaseio.com",
-  // projectId: "papresupplymobileapp",
-  // storageBucket: "papresupplymobileapp.appspot.com",
-  // messagingSenderId: "893833013962",
-  // appId: "1:893833013962:web:098f72a599d0b34d936233",
-  // measurementId: "G-7NWS5F0PKC"
+  apiKey: "AfergIzagaSwfwwyDayZmQIwefhtrMynkdfaeamrthx_-Lxb2--icrtCpPWHIqrwthM",
+  authDomain: "aaa.firebaseapp.com",
+  databaseURL: "https://as.firebaseio.com",
+  projectId: "ass",
+  storageBucket: "asa.appspot.com",
+  messagingSenderId: "893283233301396232342",
+  appId: "1:8938330423423413962:web:098f72a599d0b34d936223424233",
+  measurementId: "G-7NWS5F0PKC"
 });
 
 self.addEventListener('notificationclick', function (event) {
   console.log("click handler");
+  console.log(event);
 });
 
 const messaging = firebase.messaging();
