@@ -2,14 +2,7 @@ import * as firebase from "firebase/app";
 import "firebase/messaging";
 
 firebase.initializeApp({
-  apiKey: "AfergIzagaSwfwwyDayZmQIwefhtrMynkdfaeamrthx_-Lxb2--icrtCpPWHIqrwthM",
-  authDomain: "aaa.firebaseapp.com",
-  databaseURL: "https://as.firebaseio.com",
-  projectId: "ass",
-  storageBucket: "asa.appspot.com",
-  messagingSenderId: "893283233301396232342",
-  appId: "1:8938330423423413962:web:098f72a599d0b34d936223424233",
-  measurementId: "G-7NWS5F0PKC"
+  measurementId: "XXXXXXX"
 });
 
 let messaging = firebase.messaging();
@@ -27,7 +20,15 @@ messaging.onMessage(function (payload) {
     console.log("title ", noteTitle, " ", payload.notification.body);
     //var notification = //examples include this, seems not needed
 
-    new Notification(noteTitle, noteOptions);//This can be used to generate a local notification, without an incoming message. noteOptions has to be an object
+    new Notification(noteTitle, noteOptions).onclick = function (event) {
+      // console.log(event);
+      // console.log(payload.notification.click_action);
+      if(payload && payload.notification &&  payload.notification.click_action &&  payload.notification.click_action.length > 0)
+      {
+        window.open(payload.notification.click_action, '_blank');
+      }
+      this.close();
+    };
   }
   catch (err) {
     console.log('Caught error: ', err);
