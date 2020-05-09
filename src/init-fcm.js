@@ -36,7 +36,7 @@ messaging.onMessage(function (payload) {
 });
 
 messaging.usePublicVapidKey(
-  "BGVpQlfaGUzrJ4XC_A-EgvMz86P90BFB8CRKt7uG0ngx_ohIqFPNkFWgoAYq89Z_6NKMpujFIQFuFBx8DRcGM74"
+  "XXXX"
 );
 
 export { messaging };
