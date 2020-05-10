@@ -2,7 +2,7 @@ import React from "react";
 import { messaging } from "./init-fcm";
 import { compose, lifecycle, withState } from "recompose";
 
-const serverkey = "AAAA0ByZaso:APA91bEwLQEolGXWv0NX8cXI0vlHrMqq_JQD6WIdQJqiSKVLAskwdAthWLYVUE3oOUCHic1QxelAEnn0mXTLQzeRb370iKg43ui_Jj4lmktw4sGQF5B7x0nzrDw__RbtXWbSmI_XHTLO";
+const serverkey = "AAAA9VTiNyE:APA91bGzoX4grTE-2Wcy2f3fPrrTDSEm86nRTLV5uUjJEkx1w0n8MrqE-MC5CKL6xje7MQrz9a9RNrFIZoyrJqJzc7MWvt-uB8e8Hhssg1o5qzAqkgTO7vCgmNdRoJ3bha7ILA8EYdrf";
 function bodyParameter(token) {
   const collection = {
     "notification": {
