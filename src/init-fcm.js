@@ -2,7 +2,13 @@ import * as firebase from "firebase/app";
 import "firebase/messaging";
 
 firebase.initializeApp({
-  measurementId: "XXXXXXX"
+  apiKey: "AIzasaSyANY0HQrMH06NmXeDFdgdssasoIJQtoUyDuwbiKX0",
+  authDomain: "freelancer-project-458f2.firebaseapp.com",
+  databaseURL: "https://freelancer-project-458f2.firebaseio.com",
+  projectId: "freelancer-project-458f2",
+  storageBucket: "freelancer-project-4538f2.appspot.com",
+  messagingSenderId: "",
+  appId: "1:1053691098913:web:0ba18adba127366f2d135b060"
 });
 
 let messaging = firebase.messaging();
@@ -36,7 +42,7 @@ messaging.onMessage(function (payload) {
 });
 
 messaging.usePublicVapidKey(
-  "XXXX"
+  "BFCkN5mESZ8PW1Ll5nL07RsSxtrblgeQtHpCbyWUpnYsmAR_ZS-HjJeZ4WIZg0UHDV2aHd3mAdrg6BfScErJlJ0"
 );
 
 export { messaging };
