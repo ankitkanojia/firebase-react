@@ -12,6 +12,8 @@ An FCM implementation includes two main components for sending and receiving:
 A trusted environment such as Cloud Functions for Firebase or an app server on which to build, target, and send messages.
 An iOS, Android, or web (JavaScript) client app that receives messages via the corresponding platform-specific transport service.
 
+<p align="center"><img height="400" src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/firebase.jpg" alt="firebase-work" /></p>
+
 # Send or Text push sample notification using Postman
 <table>
     <tr>
