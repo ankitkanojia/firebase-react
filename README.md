@@ -1,6 +1,12 @@
 # FireBase Push Notification In React APP.
 ##### React is used to display applications in web browsers and to store local state in components, while Firebase is used for authentication, authorization, and managing a realtime database. No backend application with Node. js was needed, and this tutorial was created to show you how.
 
+# Configure/Set-up firebase push notification in React application
+
+There are only 3 basic steps need to follow to configure React application.
+1. register-sw
+2. firebase-messaging-sw
+3. init-fcm
 
 # Send or Text push sample notification using Postman
 <table>
