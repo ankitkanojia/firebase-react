@@ -28,6 +28,11 @@ These are notifications that get scheduled to be triggered by batch/cron jobs at
 4. Local notifications
 Local notifications are notifications that get triggered by the application locally, without the need for an internet connection. Think of it as running a CRON job locally on your device. Both iOS and Android support the ability to trigger notifications. These types of notifications can either be displayed immediately, or scheduled to be displayed at a later date. A good example is your Alarm Clock app, that sends a local notification at whatever time you set your alarm for.
 
+# Configuration or Set-up 
+### Generate a new key pair
+1) Open the <a href="https://console.firebase.google.com/u/0/project/_/settings/cloudmessaging/" target="_blank">Cloud Messaging</a> tab of the Firebase console Settings pane and scroll to the Web configuration section.
+2) In the Web Push certificates tab, click Generate Key Pair. The console displays a notice that the key pair was generated, and displays the public key string and date added.
+
 # Send or Text push sample notification using Postman
 <table>
     <tr>
