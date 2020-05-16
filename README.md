@@ -33,5 +33,6 @@ Local notifications are notifications that get triggered by the application loca
 Step 1: Create your firebase project from firebase console: https://console.firebase.google.com/
 Step 2: Register new account or try to logged in with existing accout
 Step 3: Once logged-in, You can see firebase console dashboard, Click on Add Project. Then give a project name, select country and click on Create Project. For example, see the below image.
-
-
+Step 5: As React application is web project, so you need to add web project/application to firebase project, so that whole settings/credentials related to firebase will be configured from that section, see the below image.
+Step 4: Once firebase project is created, you can get your Server_Key from project setting section, Using Server_Key we can able to connect React Web application with firebase application, see the below image 
+Step 5: Public_Key you can get from project setting section and then you need to generate that Public_Key, for that see the below image
