@@ -28,47 +28,10 @@ These are notifications that get scheduled to be triggered by batch/cron jobs at
 4. Local notifications
 Local notifications are notifications that get triggered by the application locally, without the need for an internet connection. Think of it as running a CRON job locally on your device. Both iOS and Android support the ability to trigger notifications. These types of notifications can either be displayed immediately, or scheduled to be displayed at a later date. A good example is your Alarm Clock app, that sends a local notification at whatever time you set your alarm for.
 
-# Configuration or Set-up 
-### Generate a new key pair
-1) Open the <a href="https://console.firebase.google.com/u/0/project/_/settings/cloudmessaging/" target="_blank">Cloud Messaging</a> tab of the Firebase console Settings pane and scroll to the Web configuration section.
-2) In the Web Push certificates tab, click Generate Key Pair. The console displays a notice that the key pair was generated, and displays the public key string and date added.
+# Configuration or Project Set-up in firebase console
 
-# Send or Text push sample notification using Postman
-<table>
-    <tr>
-        <th>TYPE</th>
-        <th>VALUE(s)</th>
-    </tr>
-    <tr>
-        <td>Method</td>
-        <td>POST</td>
-    </tr>
-    <tr>
-        <td>Endpoint URL</td>
-        <td>https://fcm.googleapis.com/fcm/send</td>
-    </tr>
-    <tr>
-        <td colspan="2">Header Parameter(s)</td>
-    </tr>
-    <tr>
-        <td>Authorization</td>
-        <td>key=XXXXXXX</td>
-    </tr>
-    <tr>
-        <td>Content-Type</td>
-        <td>application/json</td>
-    </tr>
-    <tr>
-        <td>Body Parameter(s)</td>
-        <td>
-            {
-                "notification": {
-                "title": "Firebase Notification Title",
-                    "body": "Firebase Notification Body",
-                    "click_action": "http://localhost:3000",
-                    "icon": "http://url-to-an-icon/icon.png"
-                },
-                "to": "xxxxxxx"
-        }</td>
-    </tr>
-</table>
+Step 1: Create your firebase project from firebase console: https://console.firebase.google.com/
+Step 2: Register new account or try to logged in with existing accout
+Step 3: Once logged-in, You can see firebase console dashboard, Click on Add Project. Then give a project name, select country and click on Create Project. For example, see the below image.
+
+
