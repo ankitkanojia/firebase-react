@@ -1,13 +1,13 @@
-# FireBase Push Notification In React APP.
-React front-end application uses the firebase push notifications to display real-time push notification whenever events are fired. firebase provides real-time push notifications or database interactions. Therefor, whenever we required any such kind of functionality we can use firebase service.
+# Firebase Push Notification In React APP.
+React front-end application uses the firebase push notifications to display real-time push notification whenever events are fired. firebase provides real-time push notifications or database interactions. Therefore, whenever we required any such kind of functionality we can use firebase service.
 
 #  What is Firebase Cloud Messaging?
-Firebase Cloud Messaging Platform (formerly named as GCM) is a no-cost free notification service provide by Google which enables (third-party or cross-platform) app developers to send notifications from GCM (Google Cloud Messaging) servers to their users.
+Firebase Cloud Messaging Platform (formerly named as GCM) is a no-cost free notification service provided by Google which enables (third-party or cross-platform) app developers to send notifications from GCM (Google Cloud Messaging) servers to their users.
 
 # How does it work?
-FCM requires sending and reciever services to share cross-plateform notification service.
+FCM requires sending and receiver services to share cross-platform notification service.
 
-An iOS, Android, or any web (JavaScript) client app which will receives messages via transport service from the corresponding platform-specific. A trusted environment is a cloud functions for firebase on which applications are being builded, targeted and help us to snet and recieved message.
+An iOS, Android, or any web (JavaScript) client app which will receive messages via transport service from the corresponding platform-specific. A trusted environment is a cloud function for firebase on which applications are being built, targeted, and help us to sent and received messages.
 
 <p align="center"><img height="400" src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/firebase.jpg" alt="firebase-work" /></p>
 
@@ -16,26 +16,28 @@ An iOS, Android, or any web (JavaScript) client app which will receives messages
 There are 4 kinds of scenarios in which Push Notifications get fired or triggered for all cross-platform applications.
 
 1. Immediate or Real-time notifications
-As name suggest, notifications get triggered after any certain operation or event or action gets fired. 
+As the name suggests, notifications get triggered after any certain operation or event or action gets fired. 
 For example, Real-time chat with your colleagues
 
 2. Scheduled notifications
-Whenever any job or batch or cron sheduled for a certain time, this kind of notifications service is used to acknoledge byh triggering notification.
-For Example, Any News update or a scheduled article update schedled on the next day will get acknoledge by using FCM scheduled notification service.
+Whenever any job or batch or CRON scheduled for a certain time, this kind of notifications service is used to acknowledge by triggering a notification.
+For Example, Any News update or a scheduled article update scheduled on the next day will get acknowledge by using FCM scheduled notification service.
 
 3. Scheduled notifications as a result of an action
-These are notifications that get scheduled to be triggered by batch/cron jobs at a certain moment after an action has been performed in the app. For example, on Ritual they may schedule a push notification to be triggered 10 minutes after you ordered a food item.
+Whenever any action triggered using a scheduled CRON job, after that action triggered in case of user wanted to fire notification after a certain time to be fired, then this kind of notification service is used.
+For Example, John wanted to trigger push notification after 5 min once his salary credited to account.
 
 4. Local notifications
-Local notifications are notifications that get triggered by the application locally, without the need for an internet connection. Think of it as running a CRON job locally on your device. Both iOS and Android support the ability to trigger notifications. These types of notifications can either be displayed immediately, or scheduled to be displayed at a later date. A good example is your Alarm Clock app, that sends a local notification at whatever time you set your alarm for.
+As the name suggested, this is the notifications which work as scheduler JOB in the local device, like in case of you wanted fire local notifications, then firebase will set up a CRON job in your local device and notifications are being triggered when any certain actions are fired without any help of internet connection.
+For Example, Any reminder notification, for that we don't required any internet connection, so using firebase service we can set a CRON job in the local device so that we can fire a push notification on the desired time as a reminder.
 
 # Configuration or Project Set-up in firebase console
 
 1. Create your firebase project from firebase console: https://console.firebase.google.com/
 
-2. Register new account or try to logged in with existing accout
+2. Register a new account or try to log in with existing account
 
-3. Once logged-in, You can see firebase console dashboard, Click on Add Project. Then give a project name, select country and click on Create Project. For example, see the below image.
+3. Once logged-in, You can see firebase console dashboard, Click on Add Project. Provied a project name, and then select country and then after click on Create Project. For example, see the below image.
 <p align="center"><img src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/GIFs/Add-Project.gif" alt="firebase-work" /></p>
 
 4. As React application is web project, so you need to add web project/application to firebase project, so that whole settings/credentials related to firebase will be configured from that section, see the below image.
