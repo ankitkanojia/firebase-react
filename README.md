@@ -37,7 +37,7 @@ For Example, Any reminder notification, for that we don't required any internet 
 
 2. Register a new account or try to log in with existing account
 
-3. Once logged-in, You can see firebase console dashboard, Click on Add Project. Then give a project name, select country and click on Create Project. For example, see the below image.
+3. Once logged-in, You can see firebase console dashboard, Click on Add Project. Provied a project name, and then select country and then after click on Create Project. For example, see the below image.
 <p align="center"><img src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/GIFs/Add-Project.gif" alt="firebase-work" /></p>
 
 4. As React application is web project, so you need to add web project/application to firebase project, so that whole settings/credentials related to firebase will be configured from that section, see the below image.
