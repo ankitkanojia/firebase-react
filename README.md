@@ -1,16 +1,13 @@
 # FireBase Push Notification In React APP.
-React is used to display applications in web browsers and to store local state in components, while Firebase is used for authentication, authorization, and managing a realtime database. No backend application with Node. js was needed, and this tutorial was created to show you how.
+React feont-end application uses the firebase push notifications to display real-time push notification whenever events are fired. firebase provides real-time push notifications or database interactions. Therefor, whenever we required any such kind of functionality we can use firebase service.
 
 #  What is Firebase Cloud Messaging?
-Firebase Cloud Messaging (FCM) is a cross-platform messaging solution that lets you reliably send messages at no cost.
-
-Using FCM, you can notify a client app that new email or other data is available to sync. You can send notification messages to drive user re-engagement and retention. For use cases such as instant messaging, a message can transfer a payload of up to 4KB to a client app.
+Firebase Cloud Messaging Platform (formerly named as GCM) is a no-cost free notification service provide by Google which enables (third-party or cross-platform) app developers to send notifications from GCM (Google Cloud Messaging) servers to their users.
 
 # How does it work?
-An FCM implementation includes two main components for sending and receiving:
+FCM requires sending and reciever services to share cross-plateform notification service.
 
-A trusted environment such as Cloud Functions for Firebase or an app server on which to build, target, and send messages.
-An iOS, Android, or web (JavaScript) client app that receives messages via the corresponding platform-specific transport service.
+An iOS, Android, or any web (JavaScript) client app which will receives messages via transport service from the corresponding platform-specific. A trusted environment is a cloud functions for firebase on which applications are being builded, targeted and help us to snet and recieved message.
 
 <p align="center"><img height="400" src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/firebase.jpg" alt="firebase-work" /></p>
 
