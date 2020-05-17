@@ -1,5 +1,5 @@
 # FireBase Push Notification In React APP.
-React feont-end application uses the firebase push notifications to display real-time push notification whenever events are fired. firebase provides real-time push notifications or database interactions. Therefor, whenever we required any such kind of functionality we can use firebase service.
+React front-end application uses the firebase push notifications to display real-time push notification whenever events are fired. firebase provides real-time push notifications or database interactions. Therefor, whenever we required any such kind of functionality we can use firebase service.
 
 #  What is Firebase Cloud Messaging?
 Firebase Cloud Messaging Platform (formerly named as GCM) is a no-cost free notification service provide by Google which enables (third-party or cross-platform) app developers to send notifications from GCM (Google Cloud Messaging) servers to their users.
@@ -12,12 +12,16 @@ An iOS, Android, or any web (JavaScript) client app which will receives messages
 <p align="center"><img height="400" src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/firebase.jpg" alt="firebase-work" /></p>
 
 # How many type(s) of push notification available?
-At its core, there are 4 types of scenarios in which Push Notifications get triggered for all apps.
-1. Immediate notifications
-These are notifications that get triggered after a certain action/event within the app. For example, on Instagram, whenever you send a direct message to a friend, the friend gets a push notification with your message.
+
+There are 4 kinds of scenarios in which Push Notifications get fired or triggered for all cross-platform applications.
+
+1. Immediate or Real-time notifications
+As name suggest, notifications get triggered after any certain operation or event or action gets fired. 
+For example, Real-time chat with your colleagues
 
 2. Scheduled notifications
-These are notifications that get triggered at a certain scheduled time by a batch/cron job. For example, the New York Times may send a push notification at the end of each day summarizing the top articles for that day.
+Whenever any job or batch or cron sheduled for a certain time, this kind of notifications service is used to acknoledge byh triggering notification.
+For Example, Any News update or a scheduled article update schedled on the next day will get acknoledge by using FCM scheduled notification service.
 
 3. Scheduled notifications as a result of an action
 These are notifications that get scheduled to be triggered by batch/cron jobs at a certain moment after an action has been performed in the app. For example, on Ritual they may schedule a push notification to be triggered 10 minutes after you ordered a food item.
