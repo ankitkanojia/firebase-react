@@ -58,9 +58,9 @@ npm install firebase --save or yarn add firebase
 
 after installation of firebase package we have to follow few steps to configuration of firebase push notification in react app. Let me explain step by step.
 
-#### 
-    Service Workers
-    A service worker is a script that your browser runs in the background, separate from the web page, enabling features that do not require a web page or user interaction.
+Service Workers
+------------
+A service worker is a script that your browser runs in the background, separate from the web page, enabling features that do not require a web page or user interaction.
 
 #### Step 1: Initialising Firebase
 
@@ -91,18 +91,16 @@ firebase.initializeApp({
 const messaging = firebase.messaging();`
 ```
 
-Note: you can get all this informations from step 4 which is already defined in project setup in firebase console section, or else refere <a href="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/GIFs/WebApp-Configuration.gif" alt="firebase-web-config">this link</a> for better understand.
+> Note: you can get all this informations from step 4 which is already defined in project setup in firebase console section, or else refere <a href="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/GIFs/WebApp-Configuration.gif" alt="firebase-web-config">this link</a> for better understand.
 
 
 #### Step 2: Configured Service Worker JS
 
-Service Workers
+In your project fire structure, you can see register-sw.js
+	
+```javascript	
 
-    A service worker is a script that your browser runs in the background, separate from the web page, enabling features that do not require a web page or user interaction.
-	
-	In your project fire structure, you can see register-sw.js
-	
-	const registerServiceWorker = () => {
+const registerServiceWorker = () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .register("./firebase-messaging-sw.js")
@@ -116,13 +114,14 @@ Service Workers
 };
 
 export { registerServiceWorker };
+```
 
-This service worker will basically import the script needed to show the notifications when your app is in the background.
+> This service worker will basically import the script needed to show the notifications when your app is in the background.
 We need to add firebase-messaging-sw.js to the location where your files are served.
 
 #### Step 4: Without the file firebase-messaging-sw.js, you will get following error
 
-; FirebaseError: Messaging: We are unable to register the default service worker. 
+> FirebaseError: Messaging: We are unable to register the default service worker. 
 Failed to register a ServiceWorker: A bad HTTP response code (404) was received when fetching the script. (messaging/failed-serviceworker-registration).
 
 #### Step 5: init-fcm file for initialize all notification with the public key
@@ -179,6 +178,7 @@ export { messaging };
  
 #### step 6: Requesting permission from Device
 
+```javascript
 const messaging = firebase.messaging();
  messaging
    .requestPermission()
@@ -191,7 +191,7 @@ const messaging = firebase.messaging();
    ErrElem.innerHTML = ErrElem.innerHTML + "; " + err
    console.log("Unable to get permission to notify.", err);
  });
- 
+``` 
  
  If you start a local server and serve the code above, you will get the request prompt like the following screenshot.
  https://www.itwonders-web.com//storage/app/media/Screen-Shot-2017-12-04-at-2.38.12-PM.jpg
