@@ -58,22 +58,23 @@ npm install firebase --save or yarn add firebase
 
 after installation of firebase package we have to follow few steps to configuration of firebase push notification in react app. Let me explain step by step.
 
-#### Service Workers
+#### 
+    Service Workers
     A service worker is a script that your browser runs in the background, separate from the web page, enabling features that do not require a web page or user interaction.
 
 #### Step 1: Initialising Firebase
 
 Then you have to include the firebase.js. Remember to replace your "sender ID" as the value for messagingSenderId field. After that, you can initialise Firebase.
 
- var config = {
+```javascript
+var config = {
         messagingSenderId: '<replace-with-your-sender-id>'
-    };
-    firebase.initializeApp(config);
-	
-	Copy following to firebase-messaging-sw.js and place it to the root of the web folder, this will create the service worker. (note on update for Firebase v7.0.0 and above)
-	
-	
-	importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
+ };
+firebase.initializeApp(config);
+
+Copy following to firebase-messaging-sw.js and place it to the root of the web folder, this will create the service worker. (note on update for Firebase v7.0.0 and above)
+
+importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js');
 
 // Initialize the Firebase app in the service worker by passing in the
@@ -87,8 +88,8 @@ firebase.initializeApp({
 
 // Retrieve an instance of Firebase Messaging so that it can handle background
 // messages.
-const messaging = firebase.messaging();
-
+const messaging = firebase.messaging();`
+```
 
 Note: you can get all this informations from step 4 which is already defined in project setup in firebase console section, or else refere <a href="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/GIFs/WebApp-Configuration.gif" alt="firebase-web-config">this link</a> for better understand.
 
@@ -126,7 +127,8 @@ Failed to register a ServiceWorker: A bad HTTP response code (404) was received 
 
 #### Step 5: init-fcm file for initialize all notification with the public key
  
- import * as firebase from "firebase/app";
+```javascript
+import * as firebase from "firebase/app";
 import "firebase/messaging";
 
 firebase.initializeApp({
@@ -170,10 +172,10 @@ messaging.onMessage(function (payload) {
 });
 
 messaging.usePublicVapidKey(
-  "BFCkN5mESZ8PW1Ll5nL07RsSxtrblgeQtHpCbyWUpnYsmAR_ZS-HjJeZ4WIZg0UHDV2aHd3mAdrg6BfScErJlJ0"
-);
+  "BFCkN5mESZ8PW1Ll5nL07RsSxtrblgeQtHpCbyWUpnYsmAR_ZS-HjJeZ4WIZg0UHDV2aHd3mAdrg6BfScErJlJ0");
 
 export { messaging };
+```
  
 #### step 6: Requesting permission from Device
 
