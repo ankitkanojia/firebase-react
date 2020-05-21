@@ -96,13 +96,11 @@ const messaging = firebase.messaging();`
 
 #### Step 2: Configured Service Worker JS
 
-Service Workers
+In your project fire structure, you can see register-sw.js
+	
+```javascript	
 
-    A service worker is a script that your browser runs in the background, separate from the web page, enabling features that do not require a web page or user interaction.
-	
-	In your project fire structure, you can see register-sw.js
-	
-	const registerServiceWorker = () => {
+const registerServiceWorker = () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .register("./firebase-messaging-sw.js")
@@ -116,6 +114,7 @@ Service Workers
 };
 
 export { registerServiceWorker };
+```
 
 > This service worker will basically import the script needed to show the notifications when your app is in the background.
 We need to add firebase-messaging-sw.js to the location where your files are served.
