@@ -194,7 +194,6 @@ const messaging = firebase.messaging();
 ``` 
  
  If you start a local server and serve the code above, you will get the request prompt like the following screenshot.
- https://www.itwonders-web.com//storage/app/media/Screen-Shot-2017-12-04-at-2.38.12-PM.jpg
  
-Tutorial Step 6: Getting device token
+ <p align="center"><img src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/Norification%20Request.jpg" alt="permission request" /></p>
   
