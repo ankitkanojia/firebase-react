@@ -9,7 +9,7 @@ FCM requires sending and receiver services to share cross-platform notification 
 
 An iOS, Android, or any web (JavaScript) client app which will receive messages via transport service from the corresponding platform-specific. A trusted environment is a cloud function for firebase on which applications are being built, targeted, and help us to sent and received messages.
 
-<p align="center"><img height="400" src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/firebase.jpg" alt="firebase-work" /></p>
+<p align="center"><img height="400" src="https://raw.githubusercontent.com/ankitkanojia/firebase-react/development/firebase.jpg" alt="firebase-default" /></p>
 
 # How many type(s) of push notification available?
 
